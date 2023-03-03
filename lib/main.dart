@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:audioplayers/audioplayers.dart';
-import 'package:flutter/material.dart';
+
 
 
 
@@ -32,7 +32,7 @@ class _MyMusicState extends State<MyMusic> {
     });
   }
   Future<void> _play() async {
-    await _audioPlayer.play(UrlSource(_audioUrl));
+    await _audioPlayer.play(_audioUrl);
   }
 
   Future<void> _pause() async {
